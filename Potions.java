@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawlStart;
+package DungeonCrawlStart;
 
-import static DugeonCrawlStart.Dungeon.dungeon;
+import static DungeonCrawlStart.Dungeon.dungeon;
 import java.util.Scanner;
 
 /**
