@@ -14,8 +14,7 @@ import java.util.Scanner;
  */
 public class TrappedTreasure extends Being 
 {
-    public int health = 5;
-    public int attack = 50;
+   public String name = "Trapped Treasure Chest";
     
     public void encounterChest(Hero h, Dungeon d)
     {
