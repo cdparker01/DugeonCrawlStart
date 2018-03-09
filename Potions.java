@@ -21,8 +21,8 @@ public class Potions
      * Method called when the hero encounters a potion
      * the hero is given the option to use or not use the potion
      * 
-     * @param h
-     * @param d 
+     * @param h = Hero Object
+     * @param d = Dungeon Object
      */
     public void encounterPotion(Hero h, Dungeon d)
     {
