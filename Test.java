@@ -8,14 +8,20 @@ package DungeonCrawlStart;
 import java.util.Scanner;
 
 /**
+ *	The test class is where the main method is housed to run the program
  *
- * @author cdparker01
+ * @author Chandler Parker
  */
 public class Test
 {
     public static Object[] dungeon = new Object[10];
 
-   
+	/**
+     * Main method
+     * shows when the hero dies or wins
+     * 
+     * @param args 
+     */
     public static void main(String[] args)
     {
         Dragon dra = new Dragon();
@@ -60,6 +66,9 @@ public class Test
         }
         
     }
+    /**
+     * Simple print line for the representation of the heros death
+     */
     public static void end()
     {
         //25

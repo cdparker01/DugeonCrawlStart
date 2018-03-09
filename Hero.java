@@ -6,8 +6,9 @@
 package DungeonCrawlStart;
 
 /**
+ * The hero class is an extension of the being class and is the main character in the game
  *
- * @author cdparker01
+ * @author Chandler Parker
  */
 public class Hero extends Being
 {
@@ -15,16 +16,31 @@ public class Hero extends Being
     public int health = 20;
     String name = "Hero";
     
+    /**
+     * The attack method attacks the monster by dropping the health of the monster by the attack of the hero 
+     * 
+     * @param m = Monster Object
+     * @return the monsters health after it has been reduced
+     */
     public int attack(Monster m)
     {
         m.health = m.health - this.strength;
         
         return m.health;
     }
+    /**
+     * Gets the heros health 
+     * 
+     * @return Hero Objects health
+     */
     public int getHealth()
     {
         return this.health;
     }
+    /**
+     * Simple print method that creates a emotocon of a hero
+     * 
+     */
     public void emtoHero()
     {
         //20

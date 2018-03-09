@@ -9,8 +9,9 @@ import static DungeonCrawlStart.Dungeon.dungeon;
 import java.util.Scanner;
 
 /**
+ * Extension of being that creates an object to stop the hero
  *
- * @author cdparker01
+ * @author Chandler Parker
  */
 public class Monster extends Being
 {
@@ -18,6 +19,12 @@ public class Monster extends Being
     public int health = 10;
     String name = "Monster 1";
     
+    /**
+     * Method is called when the hero encounters the monster
+     * 
+     * @param h = Hero Object
+     * @param d = Dungeon Object
+     */
     public void monsterEncounter(Hero h, Dungeon d)
     {
         System.out.println("\nThe Hero encounters a Monster");
@@ -55,6 +62,11 @@ public class Monster extends Being
             dungeon[d.heroSpot - 1] = null;
         }*/
     }
+    
+    /**
+     * Simple print method to show a representation of a monster in the dungoen
+     * 
+     */
     public void monsterEmoto()
     {
         //37

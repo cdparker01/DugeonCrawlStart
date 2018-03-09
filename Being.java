@@ -6,8 +6,11 @@
 package DungeonCrawlStart;
 
 /**
- *
+ * The being class is the parent class of anything that can be considered alive in the dungeon
+ * 
+ * 
  * @author chandlerparker
+ * @version 3.8.2018
  */
 public abstract class Being extends Test
 {

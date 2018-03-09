@@ -10,7 +10,8 @@ import java.util.Scanner;
 
 
 /**
- *
+ * The dungeon class houses all of the beings and interactions as well as moves the objects through the array
+ * 
  * @author cdparker01
  */
 public class Dungeon extends Test
@@ -19,7 +20,15 @@ public class Dungeon extends Test
     public int heroSpot = 0;
     
     
-    // creates dungeon
+    /**
+     * Creates the dungeon and calls the method to select the difficulty
+     * 
+     * @param m
+     * @param h
+     * @param t
+     * @param p
+     * @param d 
+     */
     public void createDungeon(Monster m, Hero h, TrappedTreasure t, Potions p, Dragon d)
     {
        System.out.println("\t\t\t   DUNGEON CRAWLER VERSION 1");
@@ -31,13 +40,14 @@ public class Dungeon extends Test
 
     /**
      *
+     * Moves the hero through the array
+     *
      * @param x
      * @param t
      * @param h
      * @param p
      * @param d
-     */
-    
+	*/
     public void moveHero(int x, TrappedTreasure t, Hero h, Potions p, Dragon d, Monster m)    {   
         if(dungeon[heroSpot + 1] == null)
         {
@@ -97,6 +107,17 @@ public class Dungeon extends Test
             }  
         }   
     }
+    /**
+     * Asks the user to pick a number to select a difficulty of:
+     * 1. Easy
+     * 2. Medium
+     * 3. Hard
+     * 
+     * @param m = Monster Object
+     * @param t = TrappedTreasure Object
+     * @param p = Potion Object
+     * @param d = Dragon Object
+     */
     public void selectDifficulty(Monster m, TrappedTreasure t, Potions p, Dragon d)
     {
        Scanner scan = new Scanner(System.in);
@@ -130,6 +151,10 @@ public class Dungeon extends Test
            dungeon[7] = m;
        }
     }
+    /**
+     * Creates a title Emoto for the start of a dungeon
+     * 
+     */
     public static void titleEmoto()
     {
         System.out.println("                                      /|");

@@ -9,6 +9,7 @@ import static DungeonCrawlStart.Dungeon.dungeon;
 import java.util.Scanner;
 
 /**
+ * The Dragon class creates a "Dragon" for the hero to encounter and fight
  *
  * @author chandlerparker
  */
@@ -18,6 +19,13 @@ public class Dragon extends Being
     public int Strength = 200;
     public int breathFire = 500;
     
+    /**
+    * This method is the encounter between the hero and the dragon. 
+    * Gives the user 2 options to choose between to attack or defend
+    *
+    * @Param Hero h
+    * @param Dungeon d
+    */
     public int breathFireAttack(Hero h, Dungeon d)
     {
        System.out.println("The Dragon is about to breath fire. What will you do? 1 = dodge, 2 = defend");
@@ -38,6 +46,10 @@ public class Dragon extends Being
        }
         return 0;            
     }
+    /**
+    * Short print method to print out a graphic of a dragon
+    *
+    */
     public void emoticonDragon()
     {
         System.out.println("                 ___====-_  _-====___");

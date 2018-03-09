@@ -9,13 +9,21 @@ import static DungeonCrawlStart.Dungeon.dungeon;
 import java.util.Scanner;
 
 /**
+ * The potion class is a hidden object that the hero can encounter to heal his HP
  *
- * @author chandlerparker
+ * @author Chandler Parker
  */
 public class Potions 
 {
     public int restore = 10;
    
+   	/**
+     * Method called when the hero encounters a potion
+     * the hero is given the option to use or not use the potion
+     * 
+     * @param h
+     * @param d 
+     */
     public void encounterPotion(Hero h, Dungeon d)
     {
         System.out.println("The hero finds a potion: ");
@@ -37,6 +45,9 @@ public class Potions
         }     
         
     }
+    /**
+     * Simple emotocon to show the representation of a potion
+     */
     public void potionEmoto()
     {
         System.out.println("      _____");

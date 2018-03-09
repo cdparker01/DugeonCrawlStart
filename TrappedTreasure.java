@@ -9,13 +9,20 @@ import static DungeonCrawlStart.Dungeon.dungeon;
 import java.util.Scanner;
 
 /**
+ * Creates an encounter with the hero that asks the hero to choose a number between 1-3
  *
- * @author chandlerparker
+ * @author Chandler Parker
  */
 public class TrappedTreasure extends Being 
 {
-   public String name = "Trapped Treasure Chest";
+    public String name = "Trapped Treasure Chest";
     
+    /**
+     * Method that is called when the hero encounters a TrappedTreasure Object
+     * 
+     * @param h = Hero Object
+     * @param d = Dungeon Object
+     */
     public void encounterChest(Hero h, Dungeon d)
     {
         System.out.println("\nHero encounters a treasure chest:");
@@ -54,6 +61,9 @@ public class TrappedTreasure extends Being
                 dungeon[9] = m;
             }
     }
+    /**
+     * Simple representation of a trappedTreasure chest through println
+     */
     public void treasureEmoto()
     {
         System.out.println("  		    ____...------------...____");
