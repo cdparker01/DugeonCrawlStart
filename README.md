@@ -13,7 +13,9 @@ Github account
 
 Computer
 
-Java
+Java version 7+
+
+
 
 # Worked by:
 Chandler Parker and Justin Montero
