@@ -23,7 +23,7 @@ public class Client
     {
         int number,temp;
         Scanner scan = new Scanner(System.in);
-        Socket s = new Socket("2601:543:102:89d9:1de:fd56:4018:cb1a", 3000);
+        Socket s = new Socket("localHost", 3000);
         
         Scanner scan2 = new Scanner(s.getInputStream());
         System.out.println("Enter a 1 to start:");
