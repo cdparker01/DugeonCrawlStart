@@ -50,26 +50,26 @@ public class Server
 
                 if(input == 1)
                 { 
-                    ps.println("\nHero moves Forward");
+                    System.out.println("\nHero moves Forward");
                     d.moveHero(input,t,h,p,dra,m);
 
                 }
                 else
                 {
-                    ps.println("Error wrong key entered");
+                    System.out.println("Error wrong key entered");
                 }
 
-                ps.println("\nEnter 1 to move Forward:");
+                System.out.println("\nEnter 1 to move Forward:");
             }
 
             if(h.health > 0)
             {
-                ps.println("\nYOU WIN! The Hero finished the dungeon");
+                System.out.println("\nYOU WIN! The Hero finished the dungeon");
                 h.emtoHero();
             }
             else
             {
-                ps.println("\nGAME OVER: The Hero was killed");
+                System.out.println("\nGAME OVER: The Hero was killed");
                 Test.end();
             }
 
@@ -77,7 +77,7 @@ public class Server
   }
         
        
-        //ps.println(temp); // printed manipulated output
+        //System.out.println(temp); // printed manipulated output
         
 }
 
