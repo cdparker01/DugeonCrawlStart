@@ -26,7 +26,7 @@ public class Client
         Socket s = new Socket("2601:543:102:89d9:1de:fd56:4018:cb1a", 3000);
         
         Scanner scan2 = new Scanner(s.getInputStream());
-        System.out.println("Enter any number:");
+        System.out.println("Enter a 1 to start:");
         number = scan.nextInt();
         
         PrintStream p = new PrintStream(s.getOutputStream());
