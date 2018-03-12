@@ -6,7 +6,8 @@ This program was made to create a dungeon crawler game while implementing client
 1.	Open the command prompt and navigate to a location the Repository can be stored
 2.	Use the git clone command and copy and paste the repository clone link
 3.	While in the repository run the command cd .. to go into the parent directory
-4.	While in the parent directory run the command java DungeonCrawlStart.Test
+4.	While in the parent directory run the command java DungeonCrawlStart.Server
+5.  Then on the seprate computer run the client to start the program on the server
 5.	Run through the Dungeon and Enjoy
 
 # General things you will need to run this game:
